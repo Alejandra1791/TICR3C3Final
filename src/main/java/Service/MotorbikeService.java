@@ -67,8 +67,8 @@ public class MotorbikeService {
     }
 
     public boolean delete(int id){
-        Boolean resultado= getMotorbike(id).map(elemento ->{
-            motorbikeRepository.delete(elemento);
+        Boolean resultado = getMotorbike(id).map(elemento ->{
+         motorbikeRepository.delete(elemento);
             return true;
         }).orElse(false);
         return resultado;
@@ -79,4 +79,7 @@ public class MotorbikeService {
                 String.valueOf(motorbike.getYear()).length()==4 && motorbike.getDescription().length()<=250);
     }
 }
+
+
+
 

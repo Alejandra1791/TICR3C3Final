@@ -62,7 +62,8 @@ public class MessageService {
     }
 
     public boolean validarCampos(Message message){
+
         return (message.getMessageText().length()<=250);
     }
-
 }
+

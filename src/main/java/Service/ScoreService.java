@@ -68,5 +68,4 @@ public class ScoreService {
     public boolean validarCampos(Score score) {
         return ((score.getPoints() >= 0 && score.getPoints() <= 5) && score.getMessageText().length() <= 250);
     }
-
 }
